@@ -1,0 +1,10 @@
+Stl 이용한 스택 사용법
+#include <stack>
+stack<자료형> mystack; //스택 선언
+mystack.push(elementary) //스택 데이터 삽입
+mystack.pop() //스택 top데이터 삭제
+mystack.top() //스택 top데이터 반환
+mystack.size() //스택 크기 반환
+mystack.empty() //스택이 비었는지 확인
+swap (stack1, stack2) //두 스택 내용 변경
+
