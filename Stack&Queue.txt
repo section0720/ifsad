@@ -1,10 +1,22 @@
 Stl 이용한 스택 사용법
 #include <stack>
-stack<자료형> mystack; //스택 선언
-mystack.push(elementary) //스택 데이터 삽입
-mystack.pop() //스택 top데이터 삭제
-mystack.top() //스택 top데이터 반환
-mystack.size() //스택 크기 반환
-mystack.empty() //스택이 비었는지 확인
-swap (stack1, stack2) //두 스택 내용 변경
+stack<자료형> stack_name; //스택 선언
+stack_name.push(4) //스택 데이터 삽입
+stack_name.pop() //스택 top데이터 삭제 (반환값 없음)
+stack_name.top() //스택 top데이터 반환 (반환값 존재)
+stack_name.size() //스택 크기 반환
+stack_name.empty() //스택이 비었는지 확인 (반환값의 자료형은 bool)
+swap (stack_name1, stack_name2) //두 스택 내용 변경
 
+활용도: 기본적인 반복문의 탐색으로 시간복잡도를 해결하지 못 하는 수열 문제들을 해결할 때 유용
+
+Stl 이용한 큐 사용법
+#include <queue>
+queue<자료형> queue_name;  //큐 선언
+q.push(6);        // 맨 뒤에 요소 추가
+q.emplace(7);     // 맨 뒤에 요소를 직접 생성하여 추가 (임시 객체 생성 방지)
+q.pop();          // 맨 앞 요소 제거 (반환값 없음)
+q.front();  // 맨 앞 요소 반환 (제거하지 않음)
+q.back();    // 맨 뒤 요소 반환 (제거하지 않음)
+q.size();     // 큐의 현재 크기 반환
+q.empty();  // 큐가 비어있는지 확인
